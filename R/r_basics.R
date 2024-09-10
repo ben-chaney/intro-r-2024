@@ -79,6 +79,16 @@ all(a < 3) # evaluates the vector too. tests if all comparisons are true.
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
 
+df <- data.frame(a = c(1, 2, 3),
+                 b = c("joe", "tammy", "matt")) # collection of vectors. place in vector is linking them together
+
+
+df # the whole data frame
+df$a # a specific vector (column) in the data frame
+
+df$mode <- c("bike", "max", "unicycle") # adding a column
+
+summary(df) # summarizes y column including type, length, num stats if applicable
 
 # Special type: factors, and putting it all together ----
 # factors are categorical variables with a fixed set of
