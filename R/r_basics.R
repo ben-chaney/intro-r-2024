@@ -61,6 +61,21 @@ typeof(a) # this returns the type of the assigned value.
 # data structures ----
 # vectors have a single dimension, like a column or row of data
 
+a <- c(1,2,3) # c() stands for "collect" what's inside. 
+a + 1 # many basic functions are "vectorized" so they apply to every element of a vector
+b <- c(1, 2, 3, "4") # R will auto-type to a type that makes everything work if possible.
+# R is not strictly typed (statically typed) so you have to keep your eyes on it.
+
+a < 3 # some functions evaluate element-wise and return a vector.
+
+any(a < 3) # evaluates the vector. tests whether any comparison is true.
+all(a < 3) # evaluates the vector too. tests if all comparisons are true.
+
+3 %in% a # special operator to test membership. Like in SQL
+!(3 %in% a) # not operator is a bit odd in here.
+
+
+
 # data frames - the key structure for data science, multi-dimensional
 #   collections of vectors
 
