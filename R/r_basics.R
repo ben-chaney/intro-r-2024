@@ -3,8 +3,20 @@
 #   little minds"   -Ralph Waldo Emerson 
 
 # Literals ----
+"This is a string literal" # this is a comment.  A bit of a footnote with plot.
+'This is also a string literal' # double quotes are preferred in R but not required.
+T
+F
+TRUE
+FALSE
+
+
+
+# Starting with a comment
+# And we continued
 
 # Operators ----
+
 
 # variables ----
 
