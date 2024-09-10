@@ -14,12 +14,49 @@ FALSE
 
 # Starting with a comment
 # And we continued
+# 
 
 # Operators ----
+## Arithmitic 
+2 + 3 # look at my fancy calculator. Note the spaces around the operator, it's just legibility.
+5 * 23 # note that multiplication is not an "x"
 
+2 ** 3 # note this is a power
+2 ^ 3 # okay that's more standard for power
+
+## Comparison
+# Let's learn some logic... it's kinda different from other languages
+
+2 == 2 # equality test is double equals.  Not if they're identical.
+"Ben" == "ben" # R is case sensitive
+2 == 1 + 1 # Standard order of operations evaluates each side of the test first.
+2 == (1 + 1) # better for clarity
+2 != 1 # ! is "not" for most contexts.  not equal to, here.
+
+## Truth
+TRUE == 1 # 1 is interpreted as true when evaluated with a truth comparison. 0 as false
+isTRUE(TRUE) # This is True
+isTRUE(1) # This is not true.
+
+2 < 3 & 1 < 2 # note that the "and" logical operator is an ampersand, not the word "and"
+# That's different from Python.
+
+TRUE | FALSE # this is an "or" statement.
+
+## Types
+"Ben" # this is a string, or character type.
+typeof("Ben")
+typeof(42)
+typeof(42.)
+typeof(TRUE)
+
+42 == "42" # This is true.  Equality can cross types where unambigious. But don't count on it.
+
+identical(42, "42") # type matters for identical()  function
 
 # variables ----
-
+a <- "wow i'm a variable" # assignment operator is a legacy from S
+typeof(a) # this returns the type of the assigned value.
 
 # data structures ----
 # vectors have a single dimension, like a column or row of data
