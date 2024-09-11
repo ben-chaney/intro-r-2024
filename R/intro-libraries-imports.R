@@ -14,3 +14,24 @@ library(readxl)
 icebreaker_answers <- read_excel("data/icebreaker_answers.xlsx",
                                  sheet = "Sheet1")
 View(icebreaker_answers)
+
+# Let's start using dplyr package.  Get tidy folks!
+
+library(dplyr)
+
+odot_meta <-
+  sta_meta |> # this is the new native pipe.  Old pipe was %>%
+  filter(agency == "ODOT", # you could use any other combination of comparisons here.
+         highwayid == 1)
+
+notodot_meta <-
+  sta_meta |> # this is the new native pipe.  Old pipe was %>%
+  filter(agency != "ODOT")
+
+good_meta <- sta_meta |>
+  filter(
+    !is.na(detectorlocation)
+  )
+  
+
+
